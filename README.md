@@ -596,8 +596,50 @@ Analisando os Gráficos
       </p>
 
 
-    
+- 
 
+
+2. MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente
+
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax1 Crescente.png">
+  </p>
+      </p>
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax2 Crescente.png">
+  </p>
+      </p>
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax3 Crescente.png">
+  </p>
+      </p>
+
+
+- 
+
+
+3. MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente
+
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax1 Decrescente.png">
+  </p>
+      </p>
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax2 Decrescente.png">
+  </p>
+      </p>
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax3 Decrescente.png">
+  </p>
+      </p>
+
+- 
 
   <h2 align="center"> Compilação e Execução</h2>
        <p align="justify">
