@@ -575,10 +575,28 @@ plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc
 
 ### Conclusão
 
+Analisando os Gráficos
+
+1. MinMax1 Aleatório, MinMax2 aleatório e MinMax3 Aleatório
 
 
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax1 Aleatório.png">
+  </p>
+      </p>
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax2 Aleatório.png">
+  </p>
+      </p>
+
+<p align="center">
+  <img height="200rem" src="/Imagens/MinMax3 Aleatório.png">
+  </p>
+      </p>
 
 
+    
 
 
   <h2 align="center"> Compilação e Execução</h2>
