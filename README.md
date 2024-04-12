@@ -563,6 +563,16 @@ plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc
 ### Gráficos criados 
  Foram plotados 9 gráficos para a analise dos MinMax's. 
 
+ 1. MinMax1 Aleatório 
+ 2. MinMax1 Crescente
+ 3. MinMax1 Decrescente
+ 4. MinMax2 Aleatório 
+ 5. MinMax2 Crescente
+ 6. MinMax2 Decrescente
+ 7. MinMax3 Aleatório 
+ 8. MinMax3 Crescente
+ 9. MinMax3 Decrescente
+
 ### Conclusão
 
 
@@ -591,4 +601,3 @@ O código disponibilizado possui um arquivo Makefile que realiza todo o procedim
 
 
 
-teste teste
