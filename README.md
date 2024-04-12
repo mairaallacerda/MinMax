@@ -139,6 +139,7 @@ void MinMax::minMax2(const vector<int> &vet, double &tempo_execucao, int &min_va
   
 ```
 <p align="justify">
+
 - _minMax3_: este algoritmo utiliza uma abordagem um pouco diferente. Ele começa verificando se o vetor está vazio. Se não estiver vazio, inicializa _min_val_ e _max_val_ com o primeiro elemento do vetor. Em seguida, percorre o restante do vetor e atualiza _min_val_ e _max_val_ conforme necessário, da mesma forma que em _minMax1_ e _minMax2_.
    * O tempo de execução é medido da mesma maneira que nos outros algoritmos.
      
@@ -229,6 +230,7 @@ std::vector<int> gerarVetorDecrescente(int size)
    - Escrita dos resultados no arquivo CSV: os resultados são escritos no arquivo "resultados.csv", com cada linha representando uma execução com um determinado tamanho de entrada, tipo de vetor e método. Cada linha contém o tamanho do vetor, o tipo de vetor, o método utilizado e a média do tempo de execução em milissegundos.
 
  </p> Essa função permite comparar o desempenho dos métodos para diferentes cenários de entrada e é útil para avaliar a eficiência dos algoritmos em diferentes situações.
+ </p> 
 
 ```c++
 void avaliarMetodos()
@@ -522,59 +524,60 @@ plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc
 ### Parte do Arquivo `resultados.csv`:
  Aqui está uma amostra de parte do arquivo `resultados.csv`, que contém os dados utilizados para gerar os gráficos:
 ```csv
-1000,Aleatório,minMax1,0.0051
-1000,Crescente,minMax1,0.0089
-1000,Decrescente,minMax1,0.0087
-1000,Aleatório,minMax2,0.005
-1000,Crescente,minMax2,0.0082
-1000,Decrescente,minMax2,0.0093
-1000,Aleatório,minMax3,0.004
-1000,Crescente,minMax3,0.0095
-1000,Decrescente,minMax3,0.0077
-10000,Aleatório,minMax1,0.0553
-10000,Crescente,minMax1,0.0638
-10000,Decrescente,minMax1,0.0632
-10000,Aleatório,minMax2,0.0531
-10000,Crescente,minMax2,0.0618
-10000,Decrescente,minMax2,0.0631
-10000,Aleatório,minMax3,0.0388
-10000,Crescente,minMax3,0.0469
-10000,Decrescente,minMax3,0.0488
-100000,Aleatório,minMax1,0.441
-100000,Crescente,minMax1,0.4543
-100000,Decrescente,minMax1,0.4511
-100000,Aleatório,minMax2,0.4409
-100000,Crescente,minMax2,0.4532
-100000,Decrescente,minMax2,0.4516
-100000,Aleatório,minMax3,0.3217
-100000,Crescente,minMax3,0.3338
-100000,Decrescente,minMax3,0.3317
-500000,Aleatório,minMax1,2.2101
-500000,Crescente,minMax1,2.2215
-500000,Decrescente,minMax1,2.2197
-500000,Aleatório,minMax2,2.2051
-500000,Crescente,minMax2,2.2216
-500000,Decrescente,minMax2,2.2169
-500000,Aleatório,minMax3,1.6101
-500000,Crescente,minMax3,1.6124
-500000,Decrescente,minMax3,1.6143
+1000,Aleatório,minMax1,0.0081
+1000,Crescente,minMax1,0.0135
+1000,Decrescente,minMax1,0.0136
+1000,Aleatório,minMax2,0.0078
+1000,Crescente,minMax2,0.0124
+1000,Decrescente,minMax2,0.0137
+1000,Aleatório,minMax3,0.0058
+1000,Crescente,minMax3,0.0105
+1000,Decrescente,minMax3,0.0116
+10000,Aleatório,minMax1,0.0718
+10000,Crescente,minMax1,0.0836
+10000,Decrescente,minMax1,0.0859
+10000,Aleatório,minMax2,0.071
+10000,Crescente,minMax2,0.0829
+10000,Decrescente,minMax2,0.0891
+10000,Aleatório,minMax3,0.0517
+10000,Crescente,minMax3,0.0641
+10000,Decrescente,minMax3,0.0669
+100000,Aleatório,minMax1,0.6838
+100000,Crescente,minMax1,0.6949
+100000,Decrescente,minMax1,0.6981
+100000,Aleatório,minMax2,0.6783
+100000,Crescente,minMax2,0.6953
+100000,Decrescente,minMax2,0.7111
+100000,Aleatório,minMax3,0.4993
+100000,Crescente,minMax3,0.5052
+100000,Decrescente,minMax3,0.5141
+500000,Aleatório,minMax1,3.3618
+500000,Crescente,minMax1,3.3917
+500000,Decrescente,minMax1,3.4067
+500000,Aleatório,minMax2,3.4126
+500000,Crescente,minMax2,3.3935
+500000,Decrescente,minMax2,3.3778
+500000,Aleatório,minMax3,2.4644
+500000,Crescente,minMax3,2.477
+500000,Decrescente,minMax3,2.4649
+
 
 ```
 ### Arquivo organizado 
   Aqui está uma amostra de parte do arquivo `resultados_minmax1.csv`, que contém os dados utilizados para gerar os gráficos:
 ```csv
-1000,Aleatório,minMax1,0.0051
-10000,Aleatório,minMax1,0.0553
-100000,Aleatório,minMax1,0.441
-500000,Aleatório,minMax1,2.2101
-1000,Crescente,minMax1,0.0089
-10000,Crescente,minMax1,0.0638
-100000,Crescente,minMax1,0.4543
-500000,Crescente,minMax1,2.2215
-1000,Decrescente,minMax1,0.0087
-10000,Decrescente,minMax1,0.0632
-100000,Decrescente,minMax1,0.4511
-500000,Decrescente,minMax1,2.2197
+1000,Aleatório,minMax1,0.0081
+10000,Aleatório,minMax1,0.0718
+100000,Aleatório,minMax1,0.6838
+500000,Aleatório,minMax1,3.3618
+1000,Crescente,minMax1,0.0135
+10000,Crescente,minMax1,0.0836
+100000,Crescente,minMax1,0.6949
+500000,Crescente,minMax1,3.3917
+1000,Decrescente,minMax1,0.0136
+10000,Decrescente,minMax1,0.0859
+100000,Decrescente,minMax1,0.6981
+500000,Decrescente,minMax1,3.4067
 
 ```
 
@@ -595,9 +598,10 @@ plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc
 
 Analisando os Gráficos
 
-1. MinMax1 Aleatório, MinMax2 aleatório e MinMax3 Aleatório
 
-<h2 align="center"> minMax1:</h2>
+<h2 align="center"> MinMax1 Aleatório, MinMax2 aleatório e MinMax3 Aleatório</h2>
+
+            MinMax1:
 </p>
     - 1000 amostras: 0.0051
 </p>
@@ -614,7 +618,7 @@ Analisando os Gráficos
 Esses valores indicam um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta. Isso é esperado, já que o tempo de execução tende a aumentar com o tamanho dos conjuntos de dados.
 </p>
 
-<h2 align="center"> minMax2:</h2>
+            MinMax2:
 </p>
     - 1000 amostras: 0.0078
 </p>
@@ -631,7 +635,7 @@ Esses valores indicam um aumento significativo no tempo de execução à medida 
 Os valores para minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. No entanto, os tempos de execução para minMax2 são um pouco maiores do que para minMax1 em todos os tamanhos de amostra.
 </p>
 
-<h2 align="center"> minMax3:</h2>
+            MinMax3:
 
 </p>
     - 1000 amostras: 0.0058
@@ -651,7 +655,7 @@ Os valores para minMax2 também mostram um aumento no tempo de execução com o 
 Assim como nos casos anteriores, os valores para minMax3 mostram um aumento no tempo de execução com o aumento do tamanho da amostra. Os tempos de execução para minMax3 estão entre os valores observados para minMax1 e minMax2, mas seguem uma tendência semelhante.
 
 
-<h2 align="center"> Análise Geral:</h2>
+<h2 align="center"> Análise Geral dos gráficos Aleatório:</h2>
 
 </p>
 - Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, o que é esperado.
@@ -663,10 +667,11 @@ Assim como nos casos anteriores, os valores para minMax3 mostram um aumento no t
 Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser preferível devido ao seu menor tempo de execução em comparação com os outros métodos, pelo menos nos tamanhos de amostra observados. No entanto, é importante considerar outros aspectos do problema, como precisão e eficácia, ao escolher um método de minMax.
 </p>
 
-2. MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente
 
-<h2 align="center"> minMax1:</h2>
 
+<h2 align="center"> MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente</h2>
+
+            MinMax1:
 </p>
 - 1000 amostras: 0.0135
 </p>
@@ -685,7 +690,7 @@ Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser pre
 Assim como no modo aleatório, os valores para o método minMax1 mostram um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta.
 </p>
 
-<h2 align="center"> minMax2:</h2>
+            minMax2:
 
 </p>
 - 1000 amostras: 0.0124
@@ -705,7 +710,7 @@ Assim como no modo aleatório, os valores para o método minMax1 mostram um aume
 Os valores para o método minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. Os tempos de execução para minMax2 são comparáveis aos observados para minMax1.
 </p>
 
-<h2 align="center"> minMax3:</h2>
+            minMax3:
 
 </p>
 - 1000 amostras: 0.0105
@@ -726,7 +731,7 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 
 </p>
 
-<h2 align="center"> Análise Geral</h2>
+<h2 align="center"> Análise Geral dos gráficos Crescentes</h2>
 
 </p>
 - Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, como esperado.
@@ -738,8 +743,9 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 
 3. MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente
 
-<h2 align="center"> minMax1:</h2>
+<h2 align="center"> MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente</h2>
 
+            MinMax1:
 </p>
 - 1000 amostras: 0.0136
 </p>
@@ -758,8 +764,7 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 Assim como nos modos aleatório e crescente, os valores para o método minMax1 mostram um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta.
 </p>
 
-<h2 align="center"> minMax2:</h2>
-
+            MinMax2:
 </p>
 - 1000 amostras: 0.0137
 </p>
@@ -779,7 +784,7 @@ Assim como nos modos aleatório e crescente, os valores para o método minMax1 m
 Os valores para o método minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. Os tempos de execução para minMax2 são comparáveis aos observados para minMax1.
 </p>
 
-<h2 align="center"> minMax3:</h2>
+            MinMax3:
 
 </p>
 - 1000 amostras: 0.0116
@@ -800,7 +805,7 @@ Os valores para o método minMax2 também mostram um aumento no tempo de execuç
 Os valores para o método minMax3 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante às observadas para minMax1 e minMax2. No entanto, os tempos de execução para minMax3 são um pouco menores do que para minMax1 e minMax2 em todos os tamanhos de amostra.
 </p>
 
-<h2 align="center"> Análise Geral:</h2>
+<h2 align="center"> Análise Geral dos gráficos Decrescente:</h2>
 
 </p>
 - Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, como esperado.
