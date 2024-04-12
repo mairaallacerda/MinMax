@@ -598,11 +598,13 @@ Analisando os Gráficos
 1. MinMax1 Aleatório, MinMax2 aleatório e MinMax3 Aleatório
 
 *  minMax1:
- </p>
- 
+
 - 1000 amostras: 0.0051
+</p>
 - 10000 amostras: 0.0553
+</p>
 - 100000 amostras: 0.441
+</p>
 - 500000 amostras: 2.2101
 
 <p align="center">
@@ -612,7 +614,6 @@ Analisando os Gráficos
 Esses valores indicam um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta. Isso é esperado, já que o tempo de execução tende a aumentar com o tamanho dos conjuntos de dados.
 
 * minMax2:
-</p>
 
 - 1000 amostras: 0.0078
 </p>
@@ -629,7 +630,6 @@ Esses valores indicam um aumento significativo no tempo de execução à medida 
 Os valores para minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. No entanto, os tempos de execução para minMax2 são um pouco maiores do que para minMax1 em todos os tamanhos de amostra.
 
 * minMax3:
-</p>
 
 - 1000 amostras: 0.0058
 </p>
