@@ -603,13 +603,13 @@ Analisando os Gráficos
 
             MinMax1:
 </p>
-    - 1000 amostras: 0.0051
+    - 1000 amostras: 0.0081
 </p>
-    - 10000 amostras: 0.0553
+    - 10000 amostras: 0.0718
 </p>
-    - 100000 amostras: 0.441
+    - 100000 amostras: 0.6838
 </p>
-    - 500000 amostras: 2.2101
+    - 500000 amostras: 3.3618
 
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax1 Aleatório.png">
