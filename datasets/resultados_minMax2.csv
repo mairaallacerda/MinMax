@@ -1,0 +1,12 @@
+1000,Aleatório,minMax2,0.0076
+10000,Aleatório,minMax2,0.0679
+100000,Aleatório,minMax2,0.6705
+500000,Aleatório,minMax2,3.3809
+1000,Crescente,minMax2,0.0122
+10000,Crescente,minMax2,0.0822
+100000,Crescente,minMax2,0.6839
+500000,Crescente,minMax2,3.3936
+1000,Decrescente,minMax2,0.0138
+10000,Decrescente,minMax2,0.0826
+100000,Decrescente,minMax2,0.6928
+500000,Decrescente,minMax2,3.3851
