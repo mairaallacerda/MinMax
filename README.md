@@ -612,6 +612,7 @@ Analisando os Gráficos
   </p>
       </p>
 Esses valores indicam um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta. Isso é esperado, já que o tempo de execução tende a aumentar com o tamanho dos conjuntos de dados.
+</p>
 
 * *_minMax2_*:
 </p>
@@ -628,6 +629,7 @@ Esses valores indicam um aumento significativo no tempo de execução à medida 
   </p>
       </p>
 Os valores para minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. No entanto, os tempos de execução para minMax2 são um pouco maiores do que para minMax1 em todos os tamanhos de amostra.
+</p>
 
 * *_minMax3_*:
 </p>
@@ -657,51 +659,149 @@ Assim como nos casos anteriores, os valores para minMax3 mostram um aumento no t
 - No entanto, a diferença de tempo de execução entre os métodos não é tão significativa, especialmente para tamanhos menores de amostra.
 </p>
 Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser preferível devido ao seu menor tempo de execução em comparação com os outros métodos, pelo menos nos tamanhos de amostra observados. No entanto, é importante considerar outros aspectos do problema, como precisão e eficácia, ao escolher um método de minMax.
-
+</p>
 
 2. MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente
 
+*  *_minMax1_*:
+</p>
+- 1000 amostras: 0.0135
+</p>
+- 10000 amostras: 0.0836
+</p>
+- 100000 amostras: 0.6949
+</p>
+- 500000 amostras: 3.3917
+</p>
 
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax1 Crescente.png">
   </p>
       </p>
 
+Assim como no modo aleatório, os valores para o método minMax1 mostram um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta.
+</p>
+
+* *_minMax2_*:
+</p>
+- 1000 amostras: 0.0124
+</p>
+- 10000 amostras: 0.0829
+</p>
+- 100000 amostras: 0.6953
+</p>
+- 500000 amostras: 3.3935
+</p>
+
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax2 Crescente.png">
   </p>
       </p>
+
+Os valores para o método minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. Os tempos de execução para minMax2 são comparáveis aos observados para minMax1.
+</p>
+
+* *_minMax3_*:
+</p>
+- 1000 amostras: 0.0105
+</p>
+- 10000 amostras: 0.0641
+</p>
+- 100000 amostras: 0.5052
+</p>
+- 500000 amostras: 2.477
+</p>
 
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax3 Crescente.png">
   </p>
       </p>
 
+Os valores para o método minMax3 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante às observadas para minMax1 e minMax2. No entanto, os tempos de execução para minMax3 são um pouco menores do que para minMax1 e minMax2 em todos os tamanhos de amostra.
 
-- 
+</p>
 
+* Análise geral:
+</p>
+- Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, como esperado.
+</p>
+- Os métodos minMax1 e minMax2 parecem ter tempos de execução comparáveis, enquanto minMax3 parece ser ligeiramente mais eficiente, especialmente para tamanhos de amostra maiores.
+</p>
+- Assim como no caso aleatório, o método minMax1 pode ser preferível para o modo crescente devido ao seu tempo de execução geralmente menor em comparação com os outros métodos. No entanto, é importante considerar outros fatores, como precisão e eficácia, ao escolher um método de minMax.
+</p>
 
 3. MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente
 
+*  *_minMax1_*:
+</p>
+- 1000 amostras: 0.0136
+</p>
+- 10000 amostras: 0.0859
+</p>
+- 100000 amostras: 0.6981
+</p>
+- 500000 amostras: 3.4067
+</p>
 
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax1 Decrescente.png">
   </p>
       </p>
 
+Assim como nos modos aleatório e crescente, os valores para o método minMax1 mostram um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta.
+</p>
+
+*  *_minMax2_*:
+</p>
+- 1000 amostras: 0.0137
+</p>
+- 10000 amostras: 0.0891
+</p>
+- 100000 amostras: 0.7111
+</p>
+- 500000 amostras: 3.3778
+</p>
+
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax2 Decrescente.png">
   </p>
       </p>
+
+
+Os valores para o método minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. Os tempos de execução para minMax2 são comparáveis aos observados para minMax1.
+</p>
+
+*  *_minMax2_*:
+</p>
+- 1000 amostras: 0.0116
+</p>
+- 10000 amostras: 0.0669
+</p>
+- 100000 amostras: 0.5141
+</p>
+- 500000 amostras: 2.4649
+</p>
 
 <p align="center">
   <img height="200rem" src="/Imagens/MinMax3 Decrescente.png">
   </p>
       </p>
 
-- 
 
-  <h2 align="center"> Compilação e Execução</h2>
+Os valores para o método minMax3 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante às observadas para minMax1 e minMax2. No entanto, os tempos de execução para minMax3 são um pouco menores do que para minMax1 e minMax2 em todos os tamanhos de amostra.
+</p>
+
+* Análise geral:
+</p>
+- Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, como esperado.
+</p>
+- Os métodos minMax1 e minMax2 parecem ter tempos de execução comparáveis, enquanto minMax3 parece ser ligeiramente mais eficiente, especialmente para tamanhos de amostra maiores.
+</p>
+- Assim como nos casos aleatório e crescente, o método minMax1 pode ser preferível para o modo decrescente devido ao seu tempo de execução geralmente menor em comparação com os outros métodos. No entanto, é importante considerar outros fatores, como precisão e eficácia, ao escolher um método de minMax.
+
+</p>
+
+<h2 align="center"> Compilação e Execução</h2>
        <p align="justify">
 
 O código disponibilizado possui um arquivo Makefile que realiza todo o procedimento de compilação e execução. Para tanto, temos as seguintes diretrizes de execução:
