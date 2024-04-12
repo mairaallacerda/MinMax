@@ -599,7 +599,7 @@ plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc
 Analisando os Gráficos
 
 
-<h2 align="center"> MinMax1 Aleatório, MinMax2 aleatório e MinMax3 Aleatório</h2>
+<h2 align="center"> MinMax1, MinMax2 e MinMax3 Aleatórios</h2>
 
             MinMax1:
 </p>
@@ -669,7 +669,7 @@ Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser pre
 
 
 
-<h2 align="center"> MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente</h2>
+<h2 align="center"> MinMax1, MinMax2 e MinMax3 Crescentes</h2>
 
             MinMax1:
 </p>
@@ -741,9 +741,8 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 - Assim como no caso aleatório, o método minMax1 pode ser preferível para o modo crescente devido ao seu tempo de execução geralmente menor em comparação com os outros métodos. No entanto, é importante considerar outros fatores, como precisão e eficácia, ao escolher um método de minMax.
 </p>
 
-3. MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente
 
-<h2 align="center"> MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente</h2>
+<h2 align="center"> MinMax1, MinMax2 e MinMax3 Decrescentes</h2>
 
             MinMax1:
 </p>
