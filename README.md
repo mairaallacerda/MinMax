@@ -597,7 +597,7 @@ Analisando os Gráficos
 
 1. MinMax1 Aleatório, MinMax2 aleatório e MinMax3 Aleatório
 
-*  *_minMax1_*:
+<h2 align="center"> minMax1:</h2>
 </p>
     - 1000 amostras: 0.0051
 </p>
@@ -614,7 +614,7 @@ Analisando os Gráficos
 Esses valores indicam um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta. Isso é esperado, já que o tempo de execução tende a aumentar com o tamanho dos conjuntos de dados.
 </p>
 
-* *_minMax2_*:
+<h2 align="center"> minMax2:</h2>
 </p>
     - 1000 amostras: 0.0078
 </p>
@@ -631,7 +631,8 @@ Esses valores indicam um aumento significativo no tempo de execução à medida 
 Os valores para minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. No entanto, os tempos de execução para minMax2 são um pouco maiores do que para minMax1 em todos os tamanhos de amostra.
 </p>
 
-* *_minMax3_*:
+<h2 align="center"> minMax3:</h2>
+
 </p>
     - 1000 amostras: 0.0058
 </p>
@@ -650,7 +651,8 @@ Os valores para minMax2 também mostram um aumento no tempo de execução com o 
 Assim como nos casos anteriores, os valores para minMax3 mostram um aumento no tempo de execução com o aumento do tamanho da amostra. Os tempos de execução para minMax3 estão entre os valores observados para minMax1 e minMax2, mas seguem uma tendência semelhante.
 
 
-* Análise geral:
+<h2 align="center"> Análise Geral:</h2>
+
 </p>
 - Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, o que é esperado.
 </p>
@@ -663,7 +665,8 @@ Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser pre
 
 2. MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente
 
-*  *_minMax1_*:
+<h2 align="center"> minMax1:</h2>
+
 </p>
 - 1000 amostras: 0.0135
 </p>
@@ -682,7 +685,8 @@ Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser pre
 Assim como no modo aleatório, os valores para o método minMax1 mostram um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta.
 </p>
 
-* *_minMax2_*:
+<h2 align="center"> minMax2:</h2>
+
 </p>
 - 1000 amostras: 0.0124
 </p>
@@ -701,7 +705,8 @@ Assim como no modo aleatório, os valores para o método minMax1 mostram um aume
 Os valores para o método minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. Os tempos de execução para minMax2 são comparáveis aos observados para minMax1.
 </p>
 
-* *_minMax3_*:
+<h2 align="center"> minMax3:</h2>
+
 </p>
 - 1000 amostras: 0.0105
 </p>
@@ -721,7 +726,8 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 
 </p>
 
-* Análise geral:
+<h2 align="center"> Análise Geral</h2>
+
 </p>
 - Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, como esperado.
 </p>
@@ -732,7 +738,8 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 
 3. MinMax1 Decrescente, MinMax2 Decrescente e MinMax3 Decrescente
 
-*  *_minMax1_*:
+<h2 align="center"> minMax1:</h2>
+
 </p>
 - 1000 amostras: 0.0136
 </p>
@@ -751,7 +758,8 @@ Os valores para o método minMax3 também mostram um aumento no tempo de execuç
 Assim como nos modos aleatório e crescente, os valores para o método minMax1 mostram um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta.
 </p>
 
-*  *_minMax2_*:
+<h2 align="center"> minMax2:</h2>
+
 </p>
 - 1000 amostras: 0.0137
 </p>
@@ -771,7 +779,8 @@ Assim como nos modos aleatório e crescente, os valores para o método minMax1 m
 Os valores para o método minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. Os tempos de execução para minMax2 são comparáveis aos observados para minMax1.
 </p>
 
-*  *_minMax2_*:
+<h2 align="center"> minMax3:</h2>
+
 </p>
 - 1000 amostras: 0.0116
 </p>
@@ -791,7 +800,8 @@ Os valores para o método minMax2 também mostram um aumento no tempo de execuç
 Os valores para o método minMax3 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante às observadas para minMax1 e minMax2. No entanto, os tempos de execução para minMax3 são um pouco menores do que para minMax1 e minMax2 em todos os tamanhos de amostra.
 </p>
 
-* Análise geral:
+<h2 align="center"> Análise Geral:</h2>
+
 </p>
 - Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, como esperado.
 </p>
