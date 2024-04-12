@@ -568,6 +568,9 @@ plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc
 
 
 
+
+
+
   <h2 align="center"> Compilação e Execução</h2>
        <p align="justify">
 
