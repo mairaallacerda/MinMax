@@ -32,46 +32,47 @@
 
 
 <h2 align="center"> <strong><em>Introdução</em></strong> </h2>
-
-<p align="justify">
+        <p align="justify">
 Este é um projeto que implementa algoritmos para encontrar o mínimo e o máximo em um vetor de inteiros. O código contém três algoritmos diferentes para realizar essa tarefa e também inclui uma função para avaliar o desempenho desses algoritmos com diferentes tamanhos de entrada e tipos de dados.
 <p align="justify">
 Além da codificação dos algoritmos, o programa conduz uma análise de desempenho minuciosa. Cada algoritmo é executado repetidamente, 10 vezes para cada combinação de tamanho de vetor (1000, 10000, 100000, 500000) e padrão de ordenação (aleatório, crescente, decrescente). Os tempos de execução são registrados e a média dessas 10 execuções é calculada para cada cenário. Essas médias são então armazenadas em um arquivo CSV para análise posterior. 
 <p align="justify">
 Após essa etapa, são gerados gráficos com base nos dados do arquivo CSV, oferecendo uma representação visual clara das discrepâncias de desempenho entre os algoritmos para diferentes situações de entrada.
+
+
 <h2 align="center"> Objetivo do código</h2>
        <p align="justify">
 O objetivo deste código é fornecer implementações eficientes para encontrar o mínimo e o máximo em um vetor de inteiros, além de realizar uma avaliação do desempenho dessas implementações com diferentes tipos de entrada (aleatório, crescente e decrescente) e tamanhos de vetor.
 
 <h2 align="center"> Funcionamento </h2>
-     
+     <p align="justify">
 É importante compreender que todas as implementações estão distribuídas em três arquivos, os quais estão detalhados na figura abaixo, juntamente com a funcionalidade de cada um deles.
+    <p align="justify">
+    <p align="center">
+     <img height="100rem" src="/Imagens/src.png">
+    </p>
+        </p>
 
- <p align="center">
-  <img height="100rem" src="/Imagens/src.png">
-  </p>
-      </p>
-      <p align="justify">
-
-- **_main.cpp_**: serve como o ponto de entrada para o programa de avaliação de desempenho dos algoritmos de busca de mínimo e máximo, coordenando a execução das funções necessárias para essa finalidade.
-   
+   - **_main.cpp_**: serve como o ponto de entrada para o programa de avaliação de desempenho dos algoritmos de busca de mínimo e máximo, coordenando a execução das funções necessárias para essa finalidade.
+     <p align="justify">
 - **_minMax.hpp_**: declara a classe MinMax, que contém três métodos estáticos: **minMax1**, **minMax2**, e **minMax3**. Esses métodos são responsáveis por encontrar os valores mínimo e máximo em um vetor de inteiros, cada um utilizando uma abordagem diferente para realizar essa tarefa.
-
+          <p align="justify">
      </p> Além disso, o cabeçalho declara três funções fora da classe MinMax para gerar vetores com valores aleatórios, em ordem crescente e em ordem decrescente.
-
+      <p align="justify">
   </p> Este cabeçalho oferece uma interface limpa e organizada para utilizar os algoritmos de busca de mínimo e máximo, bem como funções auxiliares para gerar dados de entrada e analisar os resultados dos testes.
 
+  <p align="justify">
 - **_minMax.cpp_**: implementa uma série de funções para analisar o desempenho de diferentes algoritmos de busca de mínimo e máximo em vetores de inteiros. Ele oferece três algoritmos diferentes, denominados minMax1, minMax2, e minMax3, cada um com uma abordagem ligeiramente diferente para encontrar os valores mínimo e máximo em um vetor.
       </p> Além disso, o código inclui funções para gerar vetores com valores aleatórios, em ordem crescente e em ordem decrescente, para permitir a avaliação do desempenho dos algoritmos em diferentes tipos de dados de entrada.
-
+  <p align="justify">
      </p> Em resumo, o código _minmax.cpp_ proporciona uma estrutura para avaliar e comparar o desempenho de diferentes algoritmos de busca de mínimo e máximo em diversos cenários de dados de entrada. Isso pode ser útil para entender como esses algoritmos se comportam em diferentes situações e para tomar decisões informadas sobre sua aplicação em problemas do mundo real.
+
 
  <h2 align="center"> Resoluções</h2>
        <p align="justify">  
-           
+       
 ## Implementando o código
 <p align="justify">
-
 Inicialmente, foi definida a classe MinMax, que encapsula as operações relacionadas à manipulação de matrizes para o MinMax.
 Logo depois, cria o _minMax1_:
 
@@ -107,6 +108,7 @@ void MinMax::minMax1(const vector<int> &vet, double &tempo_execucao, int &min_va
 <p align="justify">
 
 Depois de criar o minMax1, são criados minMax2 e minMax2, respectivamente.
+
 - _minMax2_: é semelhante à _minMax1_, mas utiliza uma estrutura de controle diferente para verificar e atualizar os valores mínimo e máximo. Em vez de usar duas instruções if independentes, esta função usa um if seguido de um else if. O restante do algoritmo é idêntico ao _minMax1_.
 
     * Ele ainda percorre o vetor apenas uma vez e atualiza _min_val_ e _max_val_ conforme necessário. 
@@ -500,6 +502,7 @@ Os scripts dos gráficos foram simples, primeniramente foi definido o separador 
 A instrução principal para plotar o gráfico está definida na última linha. Ela diz ao Gnuplot para usar os dados do arquivo '../datasets/resultados_minMax1.csv' e plotar apenas as linhas selecionadas. A coluna 1 é usada para o eixo x e a coluna 4 é usada para o eixo y. 
 
 Um exepmlo de script é o _minmax1_aleatorio_:  A coluna 1 é usada para o eixo x e a coluna 4 é usada para o eixo y, pegando somente os dados gerados para o mimmax1 aleatório de todos os 4 vetores.
+
 ```gnuplot
 set datafile separator ","
 set terminal png size 900,400
@@ -508,7 +511,9 @@ set title 'Tempo de execução para MinMax1'
 set xlabel 'Tamanho do vetor'
 set ylabel 'Tempo de execução (ms)'  
 plot '../datasets/resultados_minMax1.csv' every ::1::4 using 1:4 with lp lw 2 lc rgb 'blue' title 'MinMax1 - Aleatório'
+
 ```
+
   - Em geral, todos os scripts foram criados da forma acima e mudam somente o nome do arquivo de entrada e a linhas que seram lidas.
     
 <h2 align="center"> Resultados</h2>
@@ -611,28 +616,31 @@ Analisando os Gráficos
 
 *  minMax1:
  </p>
-        - 1000 amostras: 0.0051
-        - 10000 amostras: 0.0553
-        - 100000 amostras: 0.441
-        - 500000 amostras: 2.2101
+ <h2 align="center">
+- 1000 amostras: 0.0051
+- 10000 amostras: 0.0553
+- 100000 amostras: 0.441
+- 500000 amostras: 2.2101
 
 Esses valores indicam um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta. Isso é esperado, já que o tempo de execução tende a aumentar com o tamanho dos conjuntos de dados.
 
 * minMax2:
 </p>
-        - 1000 amostras: 0.0078
-        - 10000 amostras: 0.071
-        - 100000 amostras: 0.6783
-        - 500000 amostras: 3.4126
+<h2 align="center">
+- 1000 amostras: 0.0078
+- 10000 amostras: 0.071
+- 100000 amostras: 0.6783
+- 500000 amostras: 3.4126
 
 Os valores para minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. No entanto, os tempos de execução para minMax2 são um pouco maiores do que para minMax1 em todos os tamanhos de amostra.
 
 * minMax3:
 </p>
-        - 1000 amostras: 0.0058
-        - 10000 amostras: 0.0517
-        - 100000 amostras: 0.4993
-        - 500000 amostras: 2.4644
+<h2 align="center">
+- 1000 amostras: 0.0058
+- 10000 amostras: 0.0517
+- 100000 amostras: 0.4993
+- 500000 amostras: 2.4644
 
 Assim como nos casos anteriores, os valores para minMax3 mostram um aumento no tempo de execução com o aumento do tamanho da amostra. Os tempos de execução para minMax3 estão entre os valores observados para minMax1 e minMax2, mas seguem uma tendência semelhante.
 <p align="justify">
