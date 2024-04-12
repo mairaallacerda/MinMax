@@ -35,13 +35,14 @@
 
 <p align="justify">
 Este é um projeto que implementa algoritmos para encontrar o mínimo e o máximo em um vetor de inteiros. O código contém três algoritmos diferentes para realizar essa tarefa e também inclui uma função para avaliar o desempenho desses algoritmos com diferentes tamanhos de entrada e tipos de dados.
-
+<p align="justify">
 Além da codificação dos algoritmos, o programa conduz uma análise de desempenho minuciosa. Cada algoritmo é executado repetidamente, 10 vezes para cada combinação de tamanho de vetor (1000, 10000, 100000, 500000) e padrão de ordenação (aleatório, crescente, decrescente). Os tempos de execução são registrados e a média dessas 10 execuções é calculada para cada cenário. Essas médias são então armazenadas em um arquivo CSV para análise posterior. 
-
+<p align="justify">
 Após essa etapa, são gerados gráficos com base nos dados do arquivo CSV, oferecendo uma representação visual clara das discrepâncias de desempenho entre os algoritmos para diferentes situações de entrada.
 <h2 align="center"> Objetivo do código</h2>
        <p align="justify">
 O objetivo deste código é fornecer implementações eficientes para encontrar o mínimo e o máximo em um vetor de inteiros, além de realizar uma avaliação do desempenho dessas implementações com diferentes tipos de entrada (aleatório, crescente e decrescente) e tamanhos de vetor.
+
 <h2 align="center"> Funcionamento </h2>
      
 É importante compreender que todas as implementações estão distribuídas em três arquivos, os quais estão detalhados na figura abaixo, juntamente com a funcionalidade de cada um deles.
@@ -50,7 +51,8 @@ O objetivo deste código é fornecer implementações eficientes para encontrar 
   <img height="100rem" src="/Imagens/src.png">
   </p>
       </p>
-      
+      <p align="justify">
+
 - **_main.cpp_**: serve como o ponto de entrada para o programa de avaliação de desempenho dos algoritmos de busca de mínimo e máximo, coordenando a execução das funções necessárias para essa finalidade.
    
 - **_minMax.hpp_**: declara a classe MinMax, que contém três métodos estáticos: **minMax1**, **minMax2**, e **minMax3**. Esses métodos são responsáveis por encontrar os valores mínimo e máximo em um vetor de inteiros, cada um utilizando uma abordagem diferente para realizar essa tarefa.
@@ -68,6 +70,8 @@ O objetivo deste código é fornecer implementações eficientes para encontrar 
        <p align="justify">  
            
 ## Implementando o código
+<p align="justify">
+
 Inicialmente, foi definida a classe MinMax, que encapsula as operações relacionadas à manipulação de matrizes para o MinMax.
 Logo depois, cria o _minMax1_:
 
@@ -100,6 +104,8 @@ void MinMax::minMax1(const vector<int> &vet, double &tempo_execucao, int &min_va
 
 
 ```
+<p align="justify">
+
 Depois de criar o minMax1, são criados minMax2 e minMax2, respectivamente.
 - _minMax2_: é semelhante à _minMax1_, mas utiliza uma estrutura de controle diferente para verificar e atualizar os valores mínimo e máximo. Em vez de usar duas instruções if independentes, esta função usa um if seguido de um else if. O restante do algoritmo é idêntico ao _minMax1_.
 
@@ -130,6 +136,7 @@ void MinMax::minMax2(const vector<int> &vet, double &tempo_execucao, int &min_va
 }
   
 ```
+<p align="justify">
 - _minMax3_: este algoritmo utiliza uma abordagem um pouco diferente. Ele começa verificando se o vetor está vazio. Se não estiver vazio, inicializa _min_val_ e _max_val_ com o primeiro elemento do vetor. Em seguida, percorre o restante do vetor e atualiza _min_val_ e _max_val_ conforme necessário, da mesma forma que em _minMax1_ e _minMax2_.
    * O tempo de execução é medido da mesma maneira que nos outros algoritmos.
      
@@ -156,8 +163,8 @@ void MinMax::minMax2(const vector<int> &vet, double &tempo_execucao, int &min_va
     clock_t fim = clock();
     tempo_execucao = static_cast<double>(fim - inicio) / CLOCKS_PER_SEC;
 }
-
 ```
+
  Após a implemntação dos MinMax's, foram criadas as funções *gerarVetorAleatorio*, *gerarVetorCrescente*, *gerarVetorDecrescente* e *avaliarMetodos*
    
 1. *gerarVetorAleatorio*:  Esta função cria um vetor de inteiros com o tamanho especificado (size). Ela percorre o vetor e atribui a cada elemento um número inteiro aleatório entre 0 e 1000 (inclusive) usando a função _rand()_ em conjunto com o operador de módulo % para garantir que o número gerado esteja dentro do intervalo desejado. Por fim, retorna o vetor preenchido com os valores aleatórios.
@@ -339,7 +346,8 @@ vector<int> sizes = {1000, 10000, 100000, 500000};
 ```
 
  </p> 
- 
+ <p align="justify">
+
  *Observação:* Foram usado as as funções _push_back()_ e _accumulate()_, essas funções são úteis para lidar com os dados dinâmicos gerados durante a execução dos métodos e para calcular estatísticas como média, que são usadas para avaliar o desempenho dos métodos.
  
  1. A função _push_back()_ é usada para adicionar elementos a um vetor dinâmico um vetor de double. Durante o loop de execução dos métodos para diferentes vetores e diferentes tipos de dados, os tempos de execução de cada chamada são registrados em vetores separados.
@@ -349,6 +357,8 @@ Como o número de execuções (numExecutions) não é conhecido antecipadamente,
 
 
 ### Código facilitador
+<p align="justify">
+
 Para facilitar a visualização e análise de resultados experimentais, foi criado um código que organiza os tempos de execução dos diferentes métodos em conjuntos de dados variados. Ele analisa os resultados do arquivo 'resultados.csv' e os armazena em um formato adequado para plotagem de gráficos, em 3 arquivos CSV. Isso permite uma análise comparativa do desempenho dos métodos em diferentes situações, facilitando a interpretação dos resultados experimentais.
 
 ```c++
@@ -462,6 +472,7 @@ void reorganizarResultados() {
 }
 
 ```
+<p align="justify">
 
 Nesse código, os resultados de um arquivo CSV são reorganizados para facilitar a análise e visualização. Primeiro, o arquivo é aberto e lido linha por linha. Cada linha é dividida em tokens com base nas vírgulas. Os dados são então agrupados de acordo com o algoritmo usado (minMax1, minMax2 ou minMax3) e o tipo de entrada (aleatório, crescente ou decrescente).
 
@@ -482,6 +493,8 @@ Como podemos ver na imagem, foram criados 9 scripts para a criação dos gráfic
 
 
 ###  Gráficos 
+<p align="justify">
+
 Os scripts dos gráficos foram simples, primeniramente foi definido o separador de campos no arquivo de dados como vírgula. Isso é importante para garantir que o Gnuplot interprete corretamente as colunas do arquivo CSV. Logo depois, foi definido o terminal de saída como um arquivo PNG com uma largura de 900 pixels e altura de 400 pixels, e o nome do arquivo. Isso especifica o tamanho e nome da imagem de saída.
 
 A instrução principal para plotar o gráfico está definida na última linha. Ela diz ao Gnuplot para usar os dados do arquivo '../datasets/resultados_minMax1.csv' e plotar apenas as linhas selecionadas. A coluna 1 é usada para o eixo x e a coluna 4 é usada para o eixo y. 
@@ -596,7 +609,40 @@ Analisando os Gráficos
       </p>
 
 
-- 
+*  minMax1:
+ </p>
+        - 1000 amostras: 0.0051
+        - 10000 amostras: 0.0553
+        - 100000 amostras: 0.441
+        - 500000 amostras: 2.2101
+
+Esses valores indicam um aumento significativo no tempo de execução à medida que o tamanho da amostra aumenta. Isso é esperado, já que o tempo de execução tende a aumentar com o tamanho dos conjuntos de dados.
+
+* minMax2:
+</p>
+        - 1000 amostras: 0.0078
+        - 10000 amostras: 0.071
+        - 100000 amostras: 0.6783
+        - 500000 amostras: 3.4126
+
+Os valores para minMax2 também mostram um aumento no tempo de execução com o aumento do tamanho da amostra, seguindo uma tendência semelhante à observada para minMax1. No entanto, os tempos de execução para minMax2 são um pouco maiores do que para minMax1 em todos os tamanhos de amostra.
+
+* minMax3:
+</p>
+        - 1000 amostras: 0.0058
+        - 10000 amostras: 0.0517
+        - 100000 amostras: 0.4993
+        - 500000 amostras: 2.4644
+
+Assim como nos casos anteriores, os valores para minMax3 mostram um aumento no tempo de execução com o aumento do tamanho da amostra. Os tempos de execução para minMax3 estão entre os valores observados para minMax1 e minMax2, mas seguem uma tendência semelhante.
+<p align="justify">
+
+* Análise geral:
+- Todos os três métodos (minMax1, minMax2 e minMax3) mostram um aumento no tempo de execução à medida que o tamanho da amostra aumenta, o que é esperado.
+- O método minMax1 parece ser o mais eficiente em termos de tempo de execução, seguido por minMax3 e minMax2, respectivamente.
+- No entanto, a diferença de tempo de execução entre os métodos não é tão significativa, especialmente para tamanhos menores de amostra.
+
+Essa análise sugere que, para o modo aleatório, o método minMax1 pode ser preferível devido ao seu menor tempo de execução em comparação com os outros métodos, pelo menos nos tamanhos de amostra observados. No entanto, é importante considerar outros aspectos do problema, como precisão e eficácia, ao escolher um método de minMax.
 
 
 2. MinMax1 Crescente, MinMax2 Crescente e MinMax3 Crescente
